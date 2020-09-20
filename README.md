@@ -8,3 +8,9 @@ Sistema criado com Ionic para aula.
 
 
 para testar o sistema utilize o comando ionic serve
+
+
+# Futuras atualizações
+
+* função Reservar
+* conexão com banco de dados
