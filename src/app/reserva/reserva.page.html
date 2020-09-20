@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar color="warning">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Reserva
+      </ion-title
+    </ion-toolbar>
+  </ion-header>
+  
+    <ion-content fullscreen>
+        <ion-card>
+          
+              <ion-card-header>
+                    <h4>Faça sua Reserva!</h4>
+              </ion-card-header>
+              <ion-card-content>
+                     
+                <ion-item>
+                  <ion-label position="floating">Nome<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input required type="text" name="nome" ></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating" >Data<ion-text color="danger">*</ion-text></ion-label>
+                    <ion-input required type="text" name="data" ></ion-input>
+                </ion-item>    
+      
+              </ion-card-content>
+        </ion-card>
+       
+           <ion-card>
+         
+                <ion-card-header>
+                       <h4>Escolha a Mesa e o Ambiente</h4>
+                </ion-card-header>
+                <ion-card-content>
+                          
+                    <ion-radio-group>
+                                        
+                        <img src="assets/img/floresta.png" />
+                        <ion-item>
+                           
+                          <ion-label>Floresta - Mesa até 2 Pessoas</ion-label>
+                          <ion-radio color="success" name="ambientes" value="1"></ion-radio>
+                        </ion-item>
+              
+                        <img src="assets/img/taverna.png" />
+                        <ion-item>
+                          <ion-label>Taverna - Mesa até 6 Pessoas</ion-label>
+                          <ion-radio color="tertiary" name="ambientes" value="2"></ion-radio>
+                        </ion-item>
+              
+                        <img src="assets/img/castelo.png" />
+                        <ion-item>
+                          <ion-label>Castelo - Mesa até 10 Pessoas</ion-label>
+                          <ion-radio color="danger" name="ambientes" value="3"></ion-radio>
+                        </ion-item>
+                      </ion-radio-group>
+          
+         
+      </ion-card-content>
+      <div>
+          <ion-button expand="block" (click)="form()" color="success">Salvar Reserva</ion-button>
+        </div>
+   
+    </ion-card>
+    </ion-content>
+     
+
